@@ -1,0 +1,25 @@
+A protocol stack, also known as a network protocol stack or internet protocol suite, is a set of communication protocols that are used to enable communication between devices over a network. Each protocol in the stack serves a specific purpose and operates at a different layer, providing functionality that builds upon the layer below it. The most well-known protocol stack used on the Internet is the TCP/IP (Transmission Control Protocol/Internet Protocol) stack.
+
+The TCP/IP protocol stack consists of four main layers:
+
+1. **Application Layer**: This is the topmost layer and is responsible for providing network services directly to the end-users or applications. Protocols at this layer, such as HTTP (Hypertext Transfer Protocol), SMTP (Simple Mail Transfer Protocol), and FTP (File Transfer Protocol), handle tasks like web browsing, email communication, and file transfers.
+
+2. **Transport Layer**: The transport layer manages end-to-end communication and ensures the reliable delivery of data between devices. TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are the two main protocols used in this layer. TCP provides reliable, connection-oriented communication, while UDP offers a faster but less reliable connectionless communication.
+
+3. **Internet Layer**: This layer deals with routing and forwarding data packets across networks. It is responsible for addressing, packet fragmentation, and the logical connection between different networks. The IP (Internet Protocol) is a key protocol in this layer, which handles addressing and routing.
+
+4. **Link Layer**: The link layer is responsible for the physical transmission of data over the local network. It deals with hardware addressing, error detection, and the framing of data into packets. Ethernet and Wi-Fi are examples of link layer technologies.
+
+In web development, the protocol stack is utilized to enable communication between web clients (such as web browsers) and web servers. When a user interacts with a website, their web browser sends HTTP requests to the web server, which then responds with HTTP responses containing the requested data or resources (e.g., web pages, images, videos).
+
+Here's an example of how the protocol stack works in web development:
+
+1. **Application Layer**: The web browser sends an HTTP request to the web server to retrieve a web page.
+2. **Transport Layer**: The TCP protocol ensures that the HTTP request is reliably transmitted to the web server.
+3. **Internet Layer**: The IP protocol handles addressing and routing to deliver the request to the correct destination web server.
+4. **Link Layer**: The request is broken down into packets and transmitted over the local network, such as Ethernet or Wi-Fi.
+
+When the web server receives the HTTP request, it processes it and generates an appropriate HTTP response. This response then follows a similar path back to the web browser, through the various layers of the protocol stack.
+
+Using this layered approach allows web developers to build complex web applications by relying on the established and standardized protocols, without having to worry about the intricacies of lower-level network communication. It promotes modularity, flexibility, and interoperability in web development.
+
