@@ -1,0 +1,19 @@
+#game-table {
+    border: 2px solid;
+    border-color: green;
+    text-align: center;
+    height: 200px;
+    width: 400px;
+}
+
+table caption{
+    color: white;
+    background-color: green;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#game-table tr:nth-child(even) {
+background-color: #e0f4de;
+}
+
